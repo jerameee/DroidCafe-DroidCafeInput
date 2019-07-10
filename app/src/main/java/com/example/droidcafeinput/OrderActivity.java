@@ -1,4 +1,4 @@
-package com.example.droidcafe;
+package com.example.droidcafeinput;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -22,7 +22,7 @@ public class OrderActivity extends AppCompatActivity implements
         setContentView(R.layout.activity_order);
 
         Intent intent = getIntent();
-        String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+        String message = intent.getStringExtra(com.example.droidcafeinput.MainActivity.EXTRA_MESSAGE);
         TextView textView = findViewById(R.id.order_textview);
         textView.setText(message);
 
